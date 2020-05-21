@@ -27,20 +27,8 @@ stages:
   - stage: dev
     jobs:
       - deployment: dev
-        environment: dev
         strategy:
-         runOnce:
-           deploy:
+          runOnce:
+            deploy:
              steps:
-               - script: echo" hello script"
-
-
-  - stage: QA
-    jobs:
-      - deployment: QA
-        environment: QA
-        strategy:
-         runOnce:
-           deploy:
-            steps:
-              - script: echo "This is QA" 
+               - script: echo "Dev"

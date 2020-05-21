@@ -27,6 +27,7 @@ stages:
   - stage: dev
     jobs:
       - deployment: dev
+        environment: dev
         strategy:
          runOnce:
            deploy:
@@ -37,6 +38,7 @@ stages:
   - stage: QA
     jobs:
       - deployment: QA
+        environment: QA
         strategy:
          runOnce:
            deploy:

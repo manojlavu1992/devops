@@ -1,0 +1,12 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: build
+    jobs:
+    - job: First
+      steps:
+        - bash: echo "Test"

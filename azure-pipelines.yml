@@ -42,8 +42,6 @@ stages:
              steps:
                - script: echo "Dev"
 
-
-
   - stage: QA
     displayName: QA Test
     jobs:

@@ -39,6 +39,7 @@ stages:
   - stage: QA
     jobs:
       - deployment: QA
+        environment: QA
         strategy:
           runOnce:
            deploy:

@@ -33,3 +33,14 @@ stages:
             deploy:
              steps:
                - script: echo "Dev"
+
+
+
+  - stage: QA
+    jobs:
+      - deployment: QA
+        strategy:
+          runOnce:
+           deploy:
+             steps:
+               - script: echo "QA"
